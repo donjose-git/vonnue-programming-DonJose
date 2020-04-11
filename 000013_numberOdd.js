@@ -1,9 +1,12 @@
-var number = 77;
-if ( number % 2 != 0 ) //Checking odd or even
+function numberOdd(number)
 {
-    console.log("the number is odd")
+    if ( number % 2 != 0 ) //Checking odd or even
+    {
+        console.log("the number is odd")
+    }
+    else
+    {
+        console.log("number is even");
+    }  
 }
-else
-{
-    console.log("number is even");
-}
+numberOdd(78);
