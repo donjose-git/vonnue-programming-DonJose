@@ -1,5 +1,5 @@
 let input = require('readline-sync');
-let Leapyear = (year) =>{
+const Leapyear = (year) =>{
     if (year % 4 == 0){
         console.log("It's leap year");
     }
