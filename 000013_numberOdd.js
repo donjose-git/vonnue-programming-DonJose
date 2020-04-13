@@ -1,5 +1,6 @@
-function numberOdd(number)
-{
+const readlinesync = require('readline-sync')
+const number = readlinesync.question("Enter a number: ");
+const numberOdd = (number) => {
     if ( number % 2 != 0 ) //Checking odd or even
     {
         console.log("the number is odd")
@@ -9,4 +10,4 @@ function numberOdd(number)
         console.log("number is even");
     }  
 }
-numberOdd(78);
+numberOdd(number);
