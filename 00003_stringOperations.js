@@ -8,8 +8,7 @@ const stringConcat = (str1, str2) => { //Concatination
 
 const stringReverse = (str1) => { //String reverse
     let stringrev = "";
-    for (let i = str1.length - 1; i >= 0; i--)
-    {   
+    for (let i = str1.length - 1; i >= 0; i--){   
         stringrev += str1[i];
     }
     return stringrev;
@@ -18,8 +17,7 @@ const stringReverse = (str1) => { //String reverse
 const reversedConcatination = (str1, str2) => { //Reversed concatination
     const concat = str1 + str2;
     var concatrevstring = "";
-    for (var i = concat.length - 1; i >= 0; i--)
-    {
+    for (let i = concat.length - 1; i >= 0; i--){
         concatrevstring += concat[i];
     }
     return concatrevstring;
