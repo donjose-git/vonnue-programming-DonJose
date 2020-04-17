@@ -1,10 +1,11 @@
 const input = require('readline-sync');
-let number1 = input.question("Enter the first number: ");
-let number2 = input.question("Enter the second number: ");
-const swapTwo = ()=> {
-    number1 == number2;
-    number2 == number1;
-    console.log("After swapping, first number: " + number2);
-    console.log("After swapping, second number: " + number1);
+let number1 = parseInt(input.question("Enter the first number: "));
+let number2 = parseInt(input.question("Enter the second number: "));
+
+const swapTwoNumbers = () => {
+    number1 = number1 + number2;
+    number2 = number1 - number2;
+    number1 = number1 - number2;
+    return [number1, number2];  
 }
-swapTwo();
+console.log("Numbers after swap:", swapTwoNumbers());
