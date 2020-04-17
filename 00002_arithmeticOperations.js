@@ -2,56 +2,51 @@ const readlinesync = require('readline-sync');
 const num1 = parseInt(readlinesync.question("Enter the first number: "));
 const num2 = parseInt(readlinesync.question("Enter the second number: "));
 
-const ArithmeticAdd = (num1, num2)=> { //Addition
-    const sum = num1 + num2;
-    console.log("sum is " + sum);
+const arithmeticAdd = (num1, num2) => { //Addition
+    return num1 + num2;
 }
 
-const ArithmeticSub = (num1, num2)=> { //subtraction
-    const difference = num1 - num2;
-    console.log("difference is " + difference);
+const arithmeticSub = (num1, num2) => { //subtraction
+    return num1 - num2;
 }
 
-const ArithmeticProduct = (num1, num2)=> { //multiplication
-    var product = num1 * num2;
-    console.log("product is " + product); 
+const arithmeticProduct = (num1, num2) => { //multiplication
+    return num1 * num2;
 }
 
-const ArithmeticQuotient = (num1, num2) => { //division
-    var quotient = num1 / num2;
-    console.log("quotient is " + quotient);
+const arithmeticQuotient = (num1, num2) => { //division
+    return num1 / num2;
 }
 
-const ArithmeticModulus = (num1, num2) => { //modulus
-    var modulus = num1 % num2;
-    console.log("modulus is " + modulus);
+const arithmeticModulus = (num1, num2) => { //modulus
+    return num1 % num2;
 }
 
-const ArithmeticLess = (num1, num2) => { //checking less number
+const arithmeticLess = (num1, num2) => { //checking less number
     if (num1 < num2)
     {
-        console.log("Num1 is less than num12");
+        console.log("num1 is less than num2");
     }
 }
 
-const ArithmeticGreater = (num1, num2) => { //checking greater number
+const arithmeticGreater = (num1, num2) => { //checking greater number
     if (num1 > num2)
     {
         console.log("num1 is greater than num2");
     }
 }
 
-function ArithmeticEqual(num1, num2) { //checking equal or not
-    if (num1 == num2)
+const arithmeticEqual = (num1, num2) => { //checking equal or not
+    if (num1 === num2)
     {
         console.log("Numbers are equal");
     }
 }
-ArithmeticAdd(num1, num2);
-ArithmeticSub(num1, num2);
-ArithmeticProduct(num1, num2);
-ArithmeticQuotient(num1, num2);
-ArithmeticModulus(num1, num2);
-ArithmeticLess(num1, num2);
-ArithmeticGreater(num1, num2);
-ArithmeticEqual(num1, num2);
+console.log("Sum is", arithmeticAdd(num1, num2));
+console.log("Difference is", arithmeticSub(num1, num2));
+console.log("Product is", arithmeticProduct(num1, num2));
+console.log("Quotient is:", arithmeticQuotient(num1, num2));
+console.log("Modulus is", arithmeticModulus(num1, num2));
+arithmeticLess(num1, num2);
+arithmeticGreater(num1, num2);
+arithmeticEqual(num1, num2);
