@@ -1,9 +1,17 @@
 const readline = require('readline-sync');
-const array = readline.question("Enter the elements: ");
-const arraval = array.split(',');
-const squareArray = ()=>{
-    for (let i = 0; i < arraval.length; i++){
-        console.log(arraval[i] ** 2);
+let arrval = [];
+const arrayElements = () => {
+    let arraysize = readline.question("Enter the size of an array: ");
+    for (let i = 0; i < arraysize; i++) {
+        arrval[i] = parseInt(readline.question("Enter the " + i + " element: "));
+    }
+    console.log(arrval);
+}
+
+const squareOfArray = () => {
+    for (let i = 0; i < arrval.length; i++) {
+        console.log(arrval[i] * arrval[i]);
     }
 }
-squareArray();
+arrayElements();
+squareOfArray();
