@@ -2,7 +2,7 @@ const input = require('readline-sync');
 const leapyear20 = (year) => {
     let i = 20;
     while (i >= 0){
-        if (year % 4 === 0){
+        if (year % 4 === 0) {
             console.log(year);
             year++;
             i--; 
