@@ -1,9 +1,12 @@
 const greatestTwo = (number1, number2) => {
     if (number1 > number2) {
-        return "number1 is greater than number2";
+        return "number1 is greater";
+    }
+    else if (number2 > number1) {
+        return "number2 is greater";
     }
     else {
-        return "number1 is less than number2";
+        return "Both are equal"
     }
 }
-console.log(greatestTwo(22, 8));
+console.log(greatestTwo(10, 15));
