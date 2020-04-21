@@ -17,7 +17,7 @@ const stringReverse = (str1) => { //String reverse
 const reversedConcatination = (str1, str2) => { //Reversed concatination
     const concat = str1 + str2;
     var concatrevstring = "";
-    for (let i = concat.length - 1; i >= 0; i--){
+    for (let i = concat.length - 1; i >= 0; i--) {
         concatrevstring += concat[i];
     }
     return concatrevstring;
@@ -26,6 +26,7 @@ const splitString = (str1) => { //String splitting
     const result = str1.split("");
     return result;
 }
+
 console.log("Concatinated string:", stringConcat(str1, str2));
 console.log("Reversed string: ", stringReverse(str1));
 console.log("Reversed concatination:", reversedConcatination(str1, str2));
