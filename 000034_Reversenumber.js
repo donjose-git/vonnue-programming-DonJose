@@ -8,7 +8,6 @@ const reverseOfNumber = (number) => {
         reminder = number % 10;
         reverse = reverse * 10 + reminder;
         number = parseInt(number / 10);
-
     }
     return reverse;
 }
